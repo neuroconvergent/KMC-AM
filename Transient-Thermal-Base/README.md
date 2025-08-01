@@ -26,11 +26,12 @@ This module implements a simple transient thermal finite element simulation for 
 > [!WARNING]
 > This section only covers building and running with the predefined parameters. If any changes are made to the `SingleElement.cpp` file for modifying the total time or dt, the `solution.pvd` needs to be regenerated using `generate_pvd.py`
 
-To build the files, the cleanest way is to create a build directory and run cmake from the build directory to seperate your auxillary files.
+To build the files, the cleanest way is to create a `build` directory and run `cmake` from the build directory to seperate your auxillary files.
 
 ```bash
 mkdir -p build && cd build
 cmake ..
+make
 ```
 
 This will generate an executable file `SingleElement` in the main directory which can be run to solve the model. Following which the results can be opened on paraview.

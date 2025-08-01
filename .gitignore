@@ -41,10 +41,7 @@
 *.dwo
 
 # CMake files
-Transient-Thermal-Base/CMakeFiles/
-Transient-Thermal-Base/CMakeCache.txt
-Transient-Thermal-Base/cmake_install.cmake
-Transient-Thermal-Base/Makefile
+Transient-Thermal-Base/build/
 Transient-Thermal-Base/SingleElement
 
 # LaTeX auxiliary files

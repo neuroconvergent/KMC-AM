@@ -11,4 +11,7 @@ find_package(deal.II REQUIRED
 deal_ii_initialize_cached_variables()
 
 add_executable(TransientThermal TransientThermal.cpp)
+set_target_properties(TransientThermal PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
+)
 deal_ii_setup_target(TransientThermal)

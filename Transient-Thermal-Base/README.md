@@ -2,7 +2,7 @@
 
 This module implements a simple transient thermal finite element simulation for a single element using [deal.II](https://dealii.org/). It serves as the baseline for future extensions involving phase change modelling using kMC and JMAK methods.
 
-The description of the solver is given in [[TransientThermal.md]]
+The description of the solver is given in [TransientThermal.md](./TransientThermal.md)
 
 ![Temperature Profile](./temperature_profile.png)
 
@@ -36,12 +36,12 @@ cmake ..
 make
 ```
 
-This will generate an executable file `SingleElement` in the main directory which can be run to solve the model. Following which the results can be opened on paraview.
+This will generate an executable file `TransientThermal` in the main directory which can be run to solve the model. Following which the results can be opened on paraview.
 
 ```bash
 # from inside of ./build
 cd ..
-./SingleElement
+./TransientThermal
 paraview solution.pvd
 ```
 

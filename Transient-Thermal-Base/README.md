@@ -2,6 +2,8 @@
 
 This module implements a simple transient thermal finite element simulation for a single element using [deal.II](https://dealii.org/). It serves as the baseline for future extensions involving phase change modelling using kMC and JMAK methods.
 
+The description of the solver is given in [[TransientThermal.md]]
+
 ![Temperature Profile](./temperature_profile.png)
 
 ## Features
@@ -12,7 +14,7 @@ This module implements a simple transient thermal finite element simulation for 
 
 ## Structure
 
-- `SingleElement.cpp` – Core implementation of the thermal solver
+- `TransientThermal.cpp` – Core implementation of the thermal solver
 - `temperature_input.dat` – Input file specifying temperature vs. time
 - `cp_table.dat`, `k_table.dat` – Material property tables
 - `Solution/` – Output files (VTU, Gnuplot)

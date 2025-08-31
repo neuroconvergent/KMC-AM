@@ -16,7 +16,7 @@ The motivation behind coupling kinetic Monte Carlo with FEA has been described o
 ```
 project-root/
 │
-├── Transient-Thermal-Base/       # ✅ Completed: Single element FEA with temperature load mimicking additive manufacturing
+├── Transient-Thermal-Base/       # ✅ Completed: FEA with temperature load mimicking additive manufacturing
 │   ├── SingleElement.cpp
 │   ├── temperature_input.dat
 │   ├── cp_table.dat
@@ -56,7 +56,7 @@ This project is licensed under the MIT License — see the [LICENSE](./LICENSE) 
 
 ## Roadmap
 
-- [x] **Transient thermal model (single element)**
+- [x] **Transient thermal model**
 - [ ] **Thermal + phase change via kMC**
 - [ ] **Thermal + phase change via JMAK**
 - [ ] **Benchmark and comparison tools**

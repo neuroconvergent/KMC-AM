@@ -1,3 +1,14 @@
+/*
+  Project: Simple Transient Thermal Problem
+
+  Notes:
+  - Mesh: subdivided cube (512 Q2 elements).
+  - Scheme: implicit Euler (θ=1).
+  - BCs: Dirichlet from file `temperature_input.dat`.
+  - Material: ρ=4620, cp(T), k(T) interpolated from tables.
+  - Initial: T=293.15 K uniform.
+  - Output: .vtu + .gpl in "Solution".
+*/
 #include <deal.II/base/function.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/table.h>
@@ -45,7 +56,7 @@ public:
       if (!(iss >> t >> temp))
         continue; // Skip bad lines
 
-      temperature_data.emplace_back(t, temp + 273.15);
+      temperature_data.emplace_back(t, temp + 273.15); // Convert to Kelvin
     }
 
     AssertThrow(
